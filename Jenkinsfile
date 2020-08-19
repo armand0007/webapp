@@ -12,6 +12,14 @@
              '''
      }
    }
+
+   stage ('check-Git-Secrets'){
+     steps {
+       sh 'rm truflehog || true'
+       sh 'docker run gesellix/trufflehog https://github.com/armand0007/webapp.git > truflehog'
+       sh 'cat truflehog'
+     }
+   }
  
    stage ('Build') {
      steps {
