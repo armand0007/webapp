@@ -21,7 +21,7 @@
      }
    }
 
-   stage ('Source Composition Analysis') {
+   stage {'Source Composition Analysis'} {
      steps { 
        sh 'rm owasp* || true'
        sh 'wget "https://raw.githubusercontent.com/armand0007/webapp/master/owasp-dependency-check.sh"'
