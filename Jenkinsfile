@@ -27,7 +27,7 @@
        sh 'wget "https://raw.githubusercontent.com/armand0007/webapp/master/owasp-dependency-check.sh"'
        sh 'chmod +x owasp-dependency-check.sh'
        sh 'bash owasp-dependency-check.sh'
-       sh 'sudo cat /root/OWASP-Dependency-check/reports/dependency-check-report.xml'
+       sh 'cat /root/OWASP-Dependency-check/reports/dependency-check-report.xml'
 
      }
    }
